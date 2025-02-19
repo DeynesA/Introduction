@@ -1,7 +1,7 @@
 // Hier kannst du pro Skill einen Bildpfad hinterlegen,
 // z.B. 'linux': 'certificates/linux_cert.jpg'
 const skillImageMap = {
-  "linux & bash": "./certificates/linux_bash_cert.jpg",
+  linux_Bash: "./certificates/linux_bash_cert.jpg",
   // Weitere Zuordnungen möglich ...
   // Skills ohne Eintrag erhalten "Zertifikat ist in progress"
 };
