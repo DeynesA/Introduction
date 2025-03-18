@@ -1,35 +1,20 @@
-pipeline{
-    agent none
-    stages{
-        agent any   
-    }
-    stages{
-        stage("A"){
-            steps{
-                echo "========executing A========"
-            }
-            post{
-                always{
-                    echo "========always========"
-                }
-                success{
-                    echo "========A executed successfully========"
-                }
-                failure{
-                    echo "========A execution failed========"
-                }
+pipeline {
+    agent any
+    stages {
+        stage('Clean workplace') {
+            steps {
+                sh 'rm -rf *'
             }
         }
-    }
-    post{
-        always{
-            echo "========always========"
+        stage('Clone from Github') {
+            steps {
+                sh 'git clone -b develop https://github.com/DeynesA/Introduction.git'
+            }
         }
-        success{
-            echo "========pipeline executed successfully ========"
-        }
-        failure{
-            echo "========pipeline execution failed========"
+        stage('Compress repository') {
+            steps {
+                sh '7z a Introduction.7z ./'
+            }
         }
     }
 }
