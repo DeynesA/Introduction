@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Clean workplace') {
+            steps {
+                sh 'rm -rf *'
+            }
+        }
+        stage('Clone from Github') {
+            steps {
+                sh 'git clone -b develop https://github.com/DeynesA/Introduction.git'
+            }
+        }
+        stage('Compress repository') {
+            steps {
+                sh '7z a Introduction.7z ./'
+            }
+        }
+    }
+}
