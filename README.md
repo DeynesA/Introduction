@@ -36,11 +36,15 @@ Willkommen zu deiner persönlichen DevOps-Bewerbungsseite! Dieses Projekt stellt
 
     ```
     const skillImageMap = {
-      'linux': 'certificates/linux_cert.jpg',
-      'bash': 'certificates/bash_cert.jpg',
-      'python': 'certificates/python_cert.jpg'
-      // weitere Skills ...
+   "linux & bash": "./certificates/linux_bash_cert.jpg",
+   "python": "./certificates/Python_pages.jpg",
+   "java": "./certificates/Arthur_Deynes_Java_Programmierung.png",
+   "ci/cd": "./certificates/Arthur_Deynes_CICD_Modul.png",   
+   "docker": "./certificates/Arthur_Deynes_Docker_Modul.png",
+   "kubernetes": "./certificates/Arthur_Deynes_Kubernetes_Modul.png",
+   "terraform": "./certificates/Arthur_Deynes_Terraform_Modul.png",
+   // weitere Skills ...
     };
     ```
     Der Schlüssel links (z. B. 'linux') muss genau so lauten (in Kleinbuchstaben), wie der Skill-Text in index.html (<div class="skill">Linux</div> →   „linux“).
-    Der Wert rechts (z. B. 'certificates/linux_cert.jpg') ist der Pfad zur Datei im Ordner certificates.
+    Der Wert rechts (z. B. 'certificates/linux_bash_cert.jpg') ist der Pfad zur Datei im Ordner certificates.
