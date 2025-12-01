@@ -8,7 +8,7 @@ const skillImageMap = {
   "docker": "./certificates/Arthur_Deynes_Docker_Modul.png",
   "kubernetes": "./certificates/Arthur_Deynes_Kubernetes_Modul.png",
   "terraform": "./certificates/Arthur_Deynes_Terraform_Modul.png",
-  "Abschluss DevOps": "./certificates/Abschluss DevOps_Arthur Deynes.jpg",
+  "abschluss devops": "./certificates/Abschluss DevOps_Arthur Deynes.jpg",
   // Weitere Zuordnungen möglich ...
   // Skills ohne Eintrag erhalten "Zertifikat ist in progress"
 };
